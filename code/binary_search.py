@@ -2,7 +2,7 @@ from bisect import bisect_left
 
 
 def binary_search(key, a):
-    """二分查找
+    """二分查找, 基于bisect实现
     
     Arg:
         key: 待查找元素
