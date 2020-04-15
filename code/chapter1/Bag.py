@@ -1,8 +1,8 @@
 class Bag:
-    """基于set实现, 没有重复元素"""
+    """基于list实现"""
     def __init__(self):
         """创建一个空背包"""
-        self.bag = set()
+        self.bag = []
 
     def add(self, item):
         """添加一个元素
@@ -10,7 +10,7 @@ class Bag:
         Args:
             item, Item
         """
-        self.bag.add(item)
+        self.bag.append(item)
 
     def __len__(self):
         """背包中的元素数量
@@ -22,8 +22,35 @@ class Bag:
     
     def __iter__(self):
         """返回一个迭代器"""
-        # 记录迭代位置, 从0开始
         return iter(self.bag)
+
+
+# class Bag:
+#     """基于set实现, 没有重复元素"""
+#     def __init__(self):
+#         """创建一个空背包"""
+#         self.bag = set()
+
+#     def add(self, item):
+#         """添加一个元素
+        
+#         Args:
+#             item, Item
+#         """
+#         self.bag.add(item)
+
+#     def __len__(self):
+#         """背包中的元素数量
+        
+#         Return:
+#             int
+#         """
+#         return len(self.bag)
+    
+#     def __iter__(self):
+#         """返回一个迭代器"""
+#         # 记录迭代位置, 从0开始
+#         return iter(self.bag)
 
 
 if __name__ == "__main__":
