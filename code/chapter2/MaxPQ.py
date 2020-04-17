@@ -1,11 +1,13 @@
 class MaxPQ:
     """优先队列
+    
     Attrs:
         pq, 基于堆的完全二叉树, 存储于pq[1..N]中, pq[0]没有使用
     """
 
     def __init__(self, a=None):
         """创建一个优先队列
+        
         Args:
             a: list[Key], 用a[]中的元素创建一个优先队列
         """
@@ -16,6 +18,7 @@ class MaxPQ:
 
     def insert(self, v):
         """向优先队列中插入一个元素
+        
         Args:
             v: Key, 可比较类型
         """
@@ -24,6 +27,7 @@ class MaxPQ:
 
     def get_max(self):
         """返回最大元素
+        
         Return:
             Key
         """
@@ -31,6 +35,7 @@ class MaxPQ:
 
     def del_max(self):
         """删除并返回最大值
+        
         Return:
             Key
         """
@@ -43,6 +48,7 @@ class MaxPQ:
 
     def __len__(self):
         """返回优先队列中的元素个数
+        
         Return:
             int
         """
@@ -50,6 +56,7 @@ class MaxPQ:
     
     def swim(self, k):
         """上浮
+        
         Args:
             k: int
         """
@@ -59,6 +66,7 @@ class MaxPQ:
     
     def sink(self, k):
         """下沉
+        
         Args:
             k: int
         """
